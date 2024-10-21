@@ -1,0 +1,43 @@
+body {
+  background-image: url('https://img.freepik.com/free-vector/modern-abstract-white-minimal-background_84443-8324.jpg?w=996&t=st=1729544627~exp=1729545227~hmac=bdc6a9ee627f2e2240e859b24e7765acce965dca400d75caf93205c28a5b5d03');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+.bmi-wrapper {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  gap: 20px; 
+  height: 100vh; 
+}
+
+.bmi-container {
+  max-width: 400px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex: 1; 
+}
+
+.bmi-result-container {
+  max-width: 300px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex: 1; 
+  text-align: center;
+}
+
+.btn-calculate {
+  background-color: #28a745; 
+  color: white;
+}
+
+.btn-calculate:hover {
+  background-color: #218838;
+}

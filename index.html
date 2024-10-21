@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container bmi-wrapper d-flex">
+    <div class="bmi-container">
+        <h2 class="text-center mb-4">BMI Calculator</h2>
+        <form id="bmiForm">
+            <div class="mb-3">
+                <label for="age" class="form-label">Age:</label>
+                <input type="number" class="form-control" id="age" placeholder="Enter your age" required>
+            </div>
+            <div class="mb-3">
+                <label for="height" class="form-label">Height (cm):</label>
+                <input type="number" class="form-control" id="height" placeholder="Enter your height" required>
+            </div>
+            <div class="mb-3">
+                <label for="weight" class="form-label">Weight (kg):</label>
+                <input type="number" class="form-control" id="weight" placeholder="Enter your weight" required>
+            </div>
+            <button type="button" class="btn btn-calculate w-100" onclick="calculateBMI()">Calculate BMI</button>
+        </form>
+    </div>
+    
+    <div class="bmi-result-container ms-4">
+        <div class="mt-4 text-center">
+            <h5>BMI Result :</h5>
+            <p id="bmiResult" class="mt-2"></p>
+            <p id="bmiMessage" class="mt-2"></p>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
